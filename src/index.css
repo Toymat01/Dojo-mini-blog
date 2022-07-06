@@ -1,13 +1,124 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Quicksand";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+body{
+  background-color: #f8f4f4;
+  margin: auto 20px;
+}
+.navbar{
+  display: flex;
+  margin: 10px 20px;
+  justify-content: space-between;
+  color: #0a96e8;
+  border-bottom: #f2f2f2 1px solid;
+}
+.links a{
+  margin: 0 20px;
+  text-decoration: none;
+  cursor: pointer;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.links a:hover{
+  background-color: #0a96e8;
+  color: #f2f2f2;
+  border: #f2f2f2 solid 1px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.blog-preview {
+  margin: 20px auto;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 16px;
+}
+.blog-preview:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  color:#0a96e8 ;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.blog-preview a {
+  text-decoration: none;
+}
+.content h1{
+  padding: 10px;
+}
+.create form{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  /* display: block; */
+}
+form h1{
+  text-align: center;
+  padding: 10px;
+  color: #0a96e8;
+}
+form label{
+  display: block;
+  color: #0088ff;
+}
+form input{
+  width: 50%;
+  padding: 5px 10px;
+  border: #f6f0f0 solid 2px;
+  border-radius: 5px;
+}
+form textarea{
+  width: 50%;
+  padding: 20px 10px;
+  border: #f6f0f0 solid 2px;
+  border-radius: 5px;
+}
+form button{
+  padding: 5px 10px;
+  border: #f6f0f0 solid 2px;
+  background: #0a96e8;
+  color: #f2f2f2;
+  border-radius: 20px;
+  margin: 4px 0;
+}
+.blog-content{
+  padding: 10px;
+  color: #111111;
+  margin: 5px auto;
+}
+.blog-content h2{
+  color: #0a96e8;
+  padding: 5px ;
+}
+.blog-content p{
+  color: #232222;
+  padding: 5px;
+  margin: 10px;
+}
+.blog-content button{
+  margin: 5px 3px;
+  border: #f2f2f2 1px solid;
+  border-radius: 10px;
+  background-color: #0a96e8;
+  color: #f2f2f2;
+  padding: 6px ;
+  cursor: pointer;
+}
+@media (min-width:800px) {
+  body{
+    margin: auto 80px;
+  }
+  .navbar{
+    padding: 20px;
+  }
+  
+}
+@media (max-width:500px){
+  .navbar{
+    margin: 10px 0;
+  }
+  .links a{
+    margin: 0 10px;
+  }
 }
